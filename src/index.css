@@ -26,6 +26,7 @@
   --color-cv: #0a66c2;
   --color-frase: #606a86;
   --color-card: #fff;
+  --color-card-link: #0d2636;
   --color-card-description: #606a89;
   --color-card-hover: #f5f5f5;
   --color-card-hover-btn: #e3f7ea;
@@ -54,6 +55,7 @@ body.dark-mode {
   --color-frase: #00c36f;
   --color-card: #182747;
   --card-shadow: none;
+  --color-card-link: #00c36f;
 }
 
 .modo {
@@ -685,15 +687,14 @@ a {
   align-items: center;
   gap: 0.3125rem;
   padding: 0.2rem 0.4rem;
-  color: var(--color-btn-theme);
+  color: var(--color-card-link);
   transition: all 0.4s ease;
 }
 
 .timeline__link:hover {
   background-color: var(--color-card-hover-btn);
-  color: var(--color-fondo);
-  font-weight: 700;
-  border-radius: 0.6rem;
+  color: var(--color-card);
+  border-radius: 0.625rem;
 }
 
 /* Paginación */
