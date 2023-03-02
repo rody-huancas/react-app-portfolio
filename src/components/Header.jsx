@@ -1,13 +1,17 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 // componentes
 import Dark from "./Dark";
+import Language from "./Language";
 
 // iconos
 import { RiHomeLine, RiUserLine, RiBriefcaseLine } from "react-icons/ri";
 
 const Header = () => {
+  const [t] = useTranslation("global");
+
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
 
@@ -43,7 +47,7 @@ const Header = () => {
                   <i>
                     <RiHomeLine />
                   </i>
-                  <span>Inicio</span>
+                  <span>{t("header.home")}</span>
                 </Link>
               </li>
 
@@ -57,7 +61,7 @@ const Header = () => {
                   <i>
                     <RiUserLine />
                   </i>
-                  <span>Sobre Mí</span>
+                  <span>{t("header.about")}</span>
                 </Link>
               </li>
 
@@ -71,15 +75,14 @@ const Header = () => {
                   <i>
                     <RiBriefcaseLine />
                   </i>
-                  <span>Proyectos</span>
+                  <span>{t("header.projects")}</span>
                 </Link>
               </li>
             </ul>
           </div>
 
           <div className="header__change-theme">
-            {/* <span className="idioma">ES</span> */}
-
+            <Language />
             <Dark />
           </div>
         </nav>

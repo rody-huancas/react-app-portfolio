@@ -1,10 +1,14 @@
+import { useTranslation } from "react-i18next";
+
 const Footer = () => {
+  const [t] = useTranslation("global");
+
   return (
     <>
       <footer className="footer container">
         <div className="footer__desarrollador">
           <p>
-            Desarrollado por <span>Rody Huancas</span>.
+            {t("footer.footer-desarrollador")} <span>Rody Huancas</span>.
           </p>
         </div>
       </footer>

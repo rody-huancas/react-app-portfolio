@@ -1,0 +1,37 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About Me",
+    "projects": "Projects"
+  },
+  "language": {
+    "es": "Spanish",
+    "en": "English"
+  },
+  "footer": {
+    "footer-desarrollador": "Developed by"
+  },
+  "home": {
+    "home-saludo": "Hello, my name is",
+    "home-area": "Web Developer",
+    "home-descripcion": "I am passionate about programming and learning new technologies.",
+    "home-cv": "Download CV",
+    "home-frase": "If you can imagine it, you can program it."
+  },
+  "about": {
+    "about-titulo": "About Me",
+    "about-descripcion-one": "Hi, I'm Hilder Rody Huancas Chuquipoma, I'm a Systems Engineering student, currently I work as a frontend web developer, but I also have knowledge in backend. I am a resolute person, with the ability to adapt to teams and eager to keep learning new technologies.",
+    "about-descripcion-two": "In my adventure in the world of web development, I have been involved in different projects related to the web, taking on new challenges and learning new strategies to correct errors that may arise when developing websites.",
+    "about-descripcion-three": "You can see my work in the section of",
+    "about-descripcion-three-one": "Projects",
+    "about-descripcion-three-two": "You can also see the challenges I have done in",
+    "about-skills-titulo": "My Skills",
+    "about-skills-subtitulo": "These are my favorite technologies.",
+    "about-contacto-titulo": "Contact me at",
+    "about-contacto-subtitulo": "You can contact me through the following means."
+  },
+  "timeline": {
+    "timeline-repositorio": "Repository",
+    "timeline-demo": "Demo"
+  }
+}

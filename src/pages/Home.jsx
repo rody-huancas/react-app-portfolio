@@ -1,18 +1,20 @@
+import { useTranslation } from "react-i18next";
+
 // iconos
 import { BsGithub } from "react-icons/bs";
 import { HiOutlineDocumentText } from "react-icons/hi";
 
 const Home = () => {
+  const [t] = useTranslation("global");
+
   window.scrollTo({ top: 0, behavior: "smooth" });
   return (
     <>
       <div className="inicio container">
-        <span className="inicio__saludo">Hola, mi nombre es</span>
+        <span className="inicio__saludo">{t("home.home-saludo")}</span>
         <h1 className="inicio__nombre">Rody Huancas</h1>
-        <span className="inicio__area">Desarrollador Web</span>
-        <p className="inicio__descripcion">
-          Me apasiona la programación y aprender nuevas tecnologías.
-        </p>
+        <span className="inicio__area">{t("home.home-area")}</span>
+        <p className="inicio__descripcion">{t("home.home-descripcion")}</p>
         <div className="inicio__botones-grupo">
           <a
             href="https://github.com/rody-huancas"
@@ -27,8 +29,8 @@ const Home = () => {
             target="_blank"
             className="inicio__boton inicio__cv"
           >
-            <HiOutlineDocumentText className="inicio__boton-icon" /> Descargar
-            CV
+            <HiOutlineDocumentText className="inicio__boton-icon" />{" "}
+            {t("home.home-cv")}
           </a>
         </div>
 
@@ -44,9 +46,7 @@ const Home = () => {
             </svg>
           </div>
           <div className="inicio__frase-descripcion">
-            <p className="inicio__frase-texto">
-              Si lo puedes imaginar, lo puedes programar.
-            </p>
+            <p className="inicio__frase-texto">{t("home.home-frase")}</p>
             <span className="inicio__frase-autor">- Alejandro Taboada.</span>
           </div>
         </div>

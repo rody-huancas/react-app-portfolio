@@ -1,0 +1,37 @@
+{
+  "header": {
+    "home": "Inicio",
+    "about": "Sobre Mí",
+    "projects": "Proyectos"
+  },
+  "language": {
+    "es": "Español",
+    "en": "Inglés"
+  },
+  "footer": {
+    "footer-desarrollador": "Desarrollado por"
+  },
+  "home": {
+    "home-saludo": "Hola, mi nombre es",
+    "home-area": "Desarrollador Web",
+    "home-descripcion": "Me apasiona la programación y aprender nuevas tecnologías.",
+    "home-cv": "Descargar CV",
+    "home-frase": "Si lo puedes imaginar, lo puedes programar."
+  },
+  "about": {
+    "about-titulo": "Sobre Mí",
+    "about-descripcion-one": "Hola!, soy Hilder Rody Huancas Chuquipoma, estudiante de la carrera de Ingeniería de Sistemas, actualmente me desempeño como desarrollador web frontend, pero también tengo conocimientos en backend. Soy una persona resolutiva, con capacidad para adaptarme a equipos y con ganas de seguir aprendiendo nuevas tecnologías.",
+    "about-descripcion-two": "En mi aventura en el mundo del desarrollo web, me he involucrado en diferentes proyectos relacionados a la web, asumiendo nuevos retos y conociendo nuevas estrategias para corregir errores que se puedan presentar al desarrollar sitos web.",
+    "about-descripcion-three": "Puedes ver mis trabajos en la sección de",
+    "about-descripcion-three-one": "Proyectos",
+    "about-descripcion-three-two": "También puedes ver los desafíos que he realizado en",
+    "about-skills-titulo": "Mis Habilidades",
+    "about-skills-subtitulo": "Estas son mis tecnologías favoritas.",
+    "about-contacto-titulo": "Contáctame",
+    "about-contacto-subtitulo": "Puedes contactarme mediante los siguientes medios."
+  },
+  "timeline": {
+    "timeline-repositorio": "Repositorio",
+    "timeline-demo": "Demo"
+  }
+}

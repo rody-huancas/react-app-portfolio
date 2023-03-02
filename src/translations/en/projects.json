@@ -1,0 +1,42 @@
+{
+  "project": {
+    "project-titulo": "My Projects",
+    "project-descripcion": "In this section you will be able to see my most outstanding projects.",
+
+    "project-1": {
+      "titulo": "Validated Form",
+      "descripcion": "This is a project to enter data into a form, and with JavaScript we have validated that certain types of characters are accepted for each field, with a real-time validation.",
+      "tecnologias": "Html, Css, JavaScript",
+      "repositorio": "https://github.com/rody-huancas/formulario-validado-js",
+      "demo": "https://rody-formulario-js.netlify.app/"
+    },
+    "project-2": {
+      "titulo": "Managing Veterinary Patients",
+      "descripcion": "This project allows to perform CRUD operations with pure JavaScript, manipulating the DOM.",
+      "tecnologias": "Html, Css, JavaScript",
+      "repositorio": "https://github.com/rody-huancas/Administrador-pacientes-veterinaria",
+      "demo": "https://rody-administra-pacientes-veterinaria.netlify.app/"
+    },
+    "project-3": {
+      "titulo": "Search for soccer teams",
+      "descripcion": "This project allows you to search for soccer teams from different leagues or countries, in which the information of each club is displayed.",
+      "tecnologias": "Html, Css, JavaScript",
+      "repositorio": "https://github.com/rody-huancas/App-buscar-equipo-futbol",
+      "demo": "https://rody-app-buscar-equipos-futbol.netlify.app/"
+    },
+    "project-4": {
+      "titulo": "Search Recipes",
+      "descripcion": "This project allows to search for recipes, in which they are filtered by categories, and by means of a modal the description and the ingredients are shown, for them 3 apis were consumed.",
+      "tecnologias": "Html, Bootstrap, JavaScript",
+      "repositorio": "https://github.com/rody-huancas/Buscador-recetas",
+      "demo": "https://rody-buscador-recetas.netlify.app/"
+    },
+    "project-5": {
+      "titulo": "Loan Quotation",
+      "descripcion": "This project allows to quote a loan using a range that goes from 0 to 20000, in which it will be selected in how much time it will be paid, and the payment data will be shown in real time.",
+      "tecnologias": "TailwindCss, JavaScript, React, Vite",
+      "repositorio": "https://github.com/rody-huancas/cotizador-prestamos-react",
+      "demo": "https://rody-cotizar-prestamo.netlify.app/"
+    }
+  }
+}

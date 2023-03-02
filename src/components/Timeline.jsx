@@ -1,6 +1,7 @@
 import { MdWork } from "react-icons/md";
 import { BsGithub } from "react-icons/bs";
 import { BiLinkExternal } from "react-icons/bi";
+import { useTranslation } from "react-i18next";
 
 const Timeline = ({
   proyecto,
@@ -9,6 +10,8 @@ const Timeline = ({
   repositorio,
   demo,
 }) => {
+  const [t] = useTranslation("global");
+
   const lista = tecnologias.map((tec) => (
     <span className="timeline__item" key={tec.toString()}>
       {tec}
@@ -25,23 +28,21 @@ const Timeline = ({
         <p className="timeline__descripcion">{descripcion}</p>
         <div className="timeline__tecnologias">{lista}</div>
         <div className="timeline__routes">
-          {repositorio.length >= 1 && (
-            <a
-              href={repositorio}
-              className="timeline__link"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <BsGithub /> Repositorio
-            </a>
-          )}
+          <a
+            href={repositorio}
+            className="timeline__link"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <BsGithub /> {t("timeline.timeline-repositorio")}
+          </a>
           <a
             href={demo}
             className="timeline__link"
             target="_blank"
             rel="noreferrer"
           >
-            <BiLinkExternal /> Demo
+            <BiLinkExternal /> {t("timeline.timeline-demo")}
           </a>
         </div>
       </div>

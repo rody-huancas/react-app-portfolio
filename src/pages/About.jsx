@@ -1,34 +1,26 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 // componentes
 import Skills from "../components/Skills";
 import Contact from "../components/Contact";
 
 const About = () => {
+  const [t] = useTranslation("global");
+
   window.scrollTo({ top: 0, behavior: "smooth" });
   return (
     <>
       <div className="about container">
-        <h2 className="about__titulo">Sobre Mí</h2>
+        <h2 className="about__titulo">{t("about.about-titulo")}</h2>
+        <p className="about__descripcion">{t("about.about-descripcion-one")}</p>
+        <p className="about__descripcion">{t("about.about-descripcion-two")}</p>
         <p className="about__descripcion">
-          Hola!, soy Hilder Rody Huancas Chuquipoma, estudiante de la carrera de
-          Ingeniería de Sistemas, actualmente me desempeño como desarrollador
-          web frontend, pero también tengo conocimientos en backend. Soy una
-          persona resolutiva, con capacidad para adaptarme a equipos y con ganas
-          de seguir aprendiendo nuevas tecnologías.
-        </p>
-        <p className="about__descripcion">
-          En mi aventura en el mundo del desarrollo web, me he involucrado en
-          diferentes proyectos relacionados a la web, asumiendo nuevos retos y
-          conociendo nuevas estrategias para corregir errores que se puedan
-          presentar al desarrollar sitos web.
-        </p>
-        <p className="about__descripcion">
-          Puedes ver mis trabajos en la sección de{" "}
+          {t("about.about-descripcion-three")}{" "}
           <Link className="about__enlace" to="/proyectos">
-            Proyectos
+            {t("about.about-descripcion-three-one")}{" "}
           </Link>
-          . También puedes ver los desafíos que he realizado en{" "}
+          . {t("about.about-descripcion-three-two")}{" "}
           <a
             className="about__enlace"
             href="https://www.frontendmentor.io/profile/rody-huancas"
@@ -38,13 +30,11 @@ const About = () => {
           </a>
           .
         </p>
-        <h3 className="about__titulo">Mis Habilidades</h3>
-        <p className="about__parrafo">Estas son mis tecnologías favoritas.</p>
+        <h3 className="about__titulo">{t("about.about-skills-titulo")}</h3>
+        <p className="about__parrafo">{t("about.about-skills-subtitulo")}</p>
         <Skills />
-        <h3 className="about__titulo">Contáctame</h3>
-        <p className="about__parrafo">
-          Puedes contactarme mediante los siguientes medios.
-        </p>
+        <h3 className="about__titulo">{t("about.about-contacto-titulo")}</h3>
+        <p className="about__parrafo">{t("about.about-contacto-subtitulo")}</p>
         <Contact />
       </div>
     </>

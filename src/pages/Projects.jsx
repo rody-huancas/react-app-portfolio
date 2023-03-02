@@ -1,60 +1,51 @@
-import { useState } from "react";
-// componentes
+import { useTranslation } from "react-i18next";
 import Timeline from "../components/Timeline";
-// helpers
-import proyectos from "../helpers/proyecto";
 
 const Projects = () => {
-  const [currentPage, setCurrentPage] = useState(1);
-  const elementsPerPage = 4;
-
-  const getElementsToShow = () => {
-    const firstIndex = (currentPage - 1) * elementsPerPage;
-    const lastIndex = firstIndex + elementsPerPage;
-    return proyectos.slice(firstIndex, lastIndex);
-  };
-
-  const pageCount = Math.ceil(proyectos.length / elementsPerPage);
-
-  const renderPageNumbers = () => {
-    const pageNumbers = [];
-    for (let i = 1; i <= pageCount; i++) {
-      const isActive = currentPage === i;
-      window.scrollTo({ top: 0, behavior: "smooth" });
-      pageNumbers.push(
-        <li className="paginacion__lista" key={i}>
-          <button
-            className={`paginacion__boton ${isActive && "paginacion__active"}`}
-            onClick={() => setCurrentPage(i)}
-          >
-            {i}
-          </button>
-        </li>
-      );
-    }
-    return pageNumbers;
-  };
+  const [t] = useTranslation("project");
 
   return (
     <>
       <div className="proyectos container">
-        <h2 className="proyectos__titulo">Mis Proyectos</h2>
-        <p className="proyectos__parrafo">
-          En esta sección podrás ver mis proyectos más destacados.
-        </p>
+        <h2 className="proyectos__titulo">{t("project.project-titulo")}</h2>
+        <p className="proyectos__parrafo">{t("project.project-descripcion")}</p>
         <div className="timeline">
-          {getElementsToShow().map((proyecto, index) => (
-            <Timeline
-              key={index}
-              proyecto={proyecto.proyecto}
-              descripcion={proyecto.descripcion}
-              tecnologias={proyecto.tecnologias}
-              repositorio={proyecto.repositorio}
-              demo={proyecto.demo}
-            />
-          ))}
+          <Timeline
+            proyecto={t("project.project-5.titulo")}
+            descripcion={t("project.project-5.descripcion")}
+            tecnologias={t("project.project-5.tecnologias").split(",")}
+            repositorio={t("project.project-5.repositorio")}
+            demo={t("project.project-5.demo")}
+          />
+          <Timeline
+            proyecto={t("project.project-4.titulo")}
+            descripcion={t("project.project-4.descripcion")}
+            tecnologias={t("project.project-4.tecnologias").split(",")}
+            repositorio={t("project.project-4.repositorio")}
+            demo={t("project.project-4.demo")}
+          />
+          <Timeline
+            proyecto={t("project.project-3.titulo")}
+            descripcion={t("project.project-3.descripcion")}
+            tecnologias={t("project.project-3.tecnologias").split(",")}
+            repositorio={t("project.project-3.repositorio")}
+            demo={t("project.project-3.demo")}
+          />
+          <Timeline
+            proyecto={t("project.project-2.titulo")}
+            descripcion={t("project.project-2.descripcion")}
+            tecnologias={t("project.project-2.tecnologias").split(",")}
+            repositorio={t("project.project-2.repositorio")}
+            demo={t("project.project-2.demo")}
+          />
+          <Timeline
+            proyecto={t("project.project-1.titulo")}
+            descripcion={t("project.project-1.descripcion")}
+            tecnologias={t("project.project-1.tecnologias").split(",")}
+            repositorio={t("project.project-1.repositorio")}
+            demo={t("project.project-1.demo")}
+          />
         </div>
-        <ul className="paginacion">{renderPageNumbers()}</ul>
       </div>
     </>
   );
