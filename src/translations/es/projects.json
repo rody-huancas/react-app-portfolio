@@ -37,6 +37,20 @@
       "tecnologias": "TailwindCss, JavaScript, React, Vite",
       "repositorio": "https://github.com/rody-huancas/cotizador-prestamos-react",
       "demo": "https://rody-cotizar-prestamo.netlify.app/"
+    },
+    "project-6": {
+      "titulo": "GifExpertApp",
+      "descripcion": "Este proyecto permite buscar gifs y ver su información, usando la api de GIPHY",
+      "tecnologias": "Css, React, Vite",
+      "repositorio": "https://github.com/rody-huancas/gif-expert-app-react/",
+      "demo": "https://rody-gifexpertapp-react.netlify.app/"
+    },
+    "project-7": {
+      "titulo": "Shopify - Tienda Virtual",
+      "descripcion": "Este proyecto simula una tienda virtual, haciendo uso de Fake Store API, para obtener datos de productos. Se realizó un carrito de compras, y con un sitio web con multiples páginas",
+      "tecnologias": "TailwindCss, React, Vite",
+      "repositorio": "https://github.com/rody-huancas/Online-Shop-react",
+      "demo": "https://rody-online-shop-react.netlify.app/"
     }
   }
 }

@@ -34,9 +34,23 @@
     "project-5": {
       "titulo": "Loan Quotation",
       "descripcion": "This project allows to quote a loan using a range that goes from 0 to 20000, in which it will be selected in how much time it will be paid, and the payment data will be shown in real time.",
-      "tecnologias": "TailwindCss, JavaScript, React, Vite",
+      "tecnologias": "TailwindCss, React, Vite",
       "repositorio": "https://github.com/rody-huancas/cotizador-prestamos-react",
       "demo": "https://rody-cotizar-prestamo.netlify.app/"
+    },
+    "project-6": {
+      "titulo": "GifExpertApp",
+      "descripcion": "This project allows you to search for gifs and see their information, using the GIPHY api",
+      "tecnologias": "Css, React, Vite",
+      "repositorio": "https://github.com/rody-huancas/gif-expert-app-react/",
+      "demo": "https://rody-gifexpertapp-react.netlify.app/"
+    },
+    "project-7": {
+      "titulo": "Shopify - Online Store",
+      "descripcion": "This project simulates a virtual store, making use of the Fake Store API, to obtain product data. A shopping cart was made, and with a website with multiple pages",
+      "tecnologias": "TailwindCss, React, Vite",
+      "repositorio": "https://github.com/rody-huancas/Online-Shop-react",
+      "demo": "https://rody-online-shop-react.netlify.app/"
     }
   }
 }

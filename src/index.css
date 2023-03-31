@@ -740,14 +740,6 @@ a {
   margin-top: 2rem;
 }
 
-.paginacion__lista {
-  width: 1.5rem;
-  height: 1.5rem;
-  display: flex;
-  justify-items: center;
-  align-items: center;
-}
-
 .paginacion__boton {
   width: 1.875rem;
   background-color: var(--color-fondo);

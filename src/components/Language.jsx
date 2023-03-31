@@ -12,15 +12,7 @@ const Language = () => {
   const handleLanguageChange = (language) => {
     i18n.changeLanguage(language);
     setIsDropdownOpen(false);
-    localStorage.setItem("language", language);
   };
-
-  useEffect(() => {
-    const language = localStorage.getItem("language");
-    if (language) {
-      i18n.changeLanguage(language);
-    }
-  }, []);
 
   return (
     <div className="header__idioma">
